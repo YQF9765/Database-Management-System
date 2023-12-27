@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Database Management System</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="https://at.alicdn.com/t/c/font_4373434_31d4zw205z3.css">
+  <script src="./js/jQuery1.12.4.js"></script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <h2 class="title_h2">用户管理</h2>
+    <div class="header">
+      <a class="increase" href="javascript:;">
+        <i class="iconfont icon-jiahao"></i>
+        新增
+      </a>
+      <a class="modify" href="javascript:;">
+        <i class="iconfont icon-edit-1-copy"></i>
+        修改
+      </a>
+      <a class="delete" href="javascript:;">
+        <i class="iconfont icon-closel"></i>
+        删除
+      </a>
+    </div>
+    <div class="containe">
+      <table>
+        <thead>
+          <tr class="t_head">
+            <th><input type="checkbox" id="checkbox"></th>
+            <th>ID</th>
+            <th>姓名</th>
+            <th>性别</th>
+            <th>部门</th>
+            <th>手机</th>
+            <th>籍贯</th>
+            <th>创建时间</th>
+            <th>操作</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- <tr>
+            <td><input type="checkbox" class="checkbox"></td>
+            <td>1</td>
+            <td>管理员</td>
+            <td>男</td>
+            <td>开发部</td>
+            <td class="phone_num">13578652525</td>
+            <td>安徽省合肥市</td>
+            <td>2023-12-14 14:54:35</td>
+            <td>
+              <a class="operate_but operate_edit" href="javascript:;"><i class="operate_edit_i iconfont icon-edit-1-copy"></i>编辑</a><a class="operate_but operate_del" href="javascript:;"><i class="operate_del_i iconfont icon-closel"></i>删除</a>
+            </td>
+          </tr> -->
+          <!-- <tr>
+            <td><input type="checkbox" class="checkbox"></td>
+            <td>2</td>
+            <td>李四</td>
+            <td>女</td>
+            <td>行政部</td>
+            <td class="phone_num">13578956898</td>
+            <td>陕西省西安市</td>
+            <td>2023-12-14 14:54:35</td>
+            <td>
+              <a class="operate_but operate_edit" href="javascript:;"><i class="operate_edit_i iconfont icon-edit-1-copy"></i>编辑</a><a class="operate_but operate_del" href="javascript:;"><i class="operate_del_i iconfont icon-closel"></i>删除</a>
+            </td>
+          </tr> -->
+        </tbody>
+      </table>
+    </div>
+    <img class="monkey" src="./images/hou.gif" alt="">
+    <!-- 新增 -->
+    <div class="addWindow_back addWindow_dis">
+      <div class="addWindow">
+        <h3>新增用户</h3>
+        <div>
+          <label for="">姓名</label>
+          <input type="text" placeholder="请输入姓名" id="name">
+        </div>
+        <div class="radio">
+          <label for="">性别</label>
+          男<input type="radio" name="1" id="male" checked>
+          女<input type="radio" name="1" id="female">
+        </div>
+        <div>
+          <label for="">部门</label>
+          <input type="text" placeholder="请输入部门" id="department">
+        </div>
+        <div>
+          <label for="">手机</label>
+          <input type="text" placeholder="请输入手机号码" id="phone">
+        </div>
+        <div>
+          <label for="">籍贯</label>
+          <input type="text" placeholder="请输入籍贯" id="native_place">
+        </div>
+        <input class="addWindow_submitTo" id="add_submitTo" type="submit">
+        <i class="addWindow_close iconfont icon-closel"></i>
+      </div>
+    </div>
+    <!-- 修改 -->
+    <div class="addWindow_back modify_back">
+      <div class="addWindow">
+        <h3>修改用户信息</h3>
+        <div>
+          <label for="">姓名</label>
+          <input type="text" placeholder="请输入姓名" id="modify_name">
+        </div>
+        <div class="radio">
+          <label for="">性别</label>
+          男<input type="radio" name="2" id="modify_male">
+          女<input type="radio" name="2" id="modify_female">
+        </div>
+        <div>
+          <label for="">部门</label>
+          <input type="text" placeholder="请输入部门" id="modify_department">
+        </div>
+        <div>
+          <label for="">手机</label>
+          <input type="text" placeholder="请输入手机号码" id="modify_phone">
+        </div>
+        <div>
+          <label for="">籍贯</label>
+          <input type="text" placeholder="请输入籍贯" id="modify_native_place">
+        </div>
+        <input class="addWindow_submitTo" id="modify_submitTo" type="submit">
+        <i class="addWindow_close modify_close iconfont icon-closel"></i>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/index.js"></script>
+</body>
+
+</html>
